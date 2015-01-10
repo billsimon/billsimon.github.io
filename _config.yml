@@ -1,0 +1,32 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: kramdown
+
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: billsimon.net
+
+description: My experiences with technology and life in general.
+author:
+  name: Bill Simon
+  email: blog@billsimon.net
+  github: billsimon
+  twitter: phonesimon
+#  pinterest: asd123
+  linkedin: billsimon
+  bio: My experiences with technology and life in general.
+  email_md5: 284c44db77dc8c9f11d12711ae9e1535
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH:

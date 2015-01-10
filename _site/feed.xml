@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title></title>
+		<description>Stylish Jekyll Theme</description>
+		<link>/</link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>New Blog</title>
+				<description>&lt;p&gt;New year, new blog, now hosted on Github Pages.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 10 Jan 2015 00:00:00 -0500</pubDate>
+				<link>/2015/01/10/new-blog.html</link>
+				<guid isPermaLink="true">/2015/01/10/new-blog.html</guid>
+			</item>
+		
+	</channel>
+</rss>
