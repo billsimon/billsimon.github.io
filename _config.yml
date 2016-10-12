@@ -14,7 +14,7 @@ defaults:
     values:
       title: billsimon.net
 
-description: My experiences with technology and life in general.
+description: A landing site for billsimon.net
 author:
   name: Bill Simon
   email: blog@billsimon.net
@@ -22,7 +22,7 @@ author:
   twitter: phonesimon
 #  pinterest: asd123
   linkedin: billsimon
-  bio: My experiences with technology and life in general.
+  bio: A landing site for billsimon.net
   email_md5: 284c44db77dc8c9f11d12711ae9e1535
 
 rss_path: feed.xml
