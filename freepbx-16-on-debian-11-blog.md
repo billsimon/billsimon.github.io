@@ -20,7 +20,7 @@ Now we can install FreePBX, downloaded from freepbx.org and deployed using the i
 
 As a final step, we create a systemd unit that starts FreePBX on boot.
 
-In a matter of minutes, FreePBX 16 with Asterisk 16 is now installed and you are ready to move on to configuration from the web interface. Browse to http://<the IP address of the server> to continue. 
+In a matter of minutes, FreePBX 16 with Asterisk 16 is now installed and you are ready to move on to configuration from the web interface. Browse to http://the-IP-address-of-the-server to continue. 
   
 There are still a few clean-up items remaining. Don't put off this task: add some network security. The Sangoma firewall module is not available on this installation, so you will probably want to manually configure iptables or ufw to control acccess, unless you have another firewall in front of your server.
 
