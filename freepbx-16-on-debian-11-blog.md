@@ -2,7 +2,7 @@
 
 There are many ways to install a FreePBX system; the easiest way is to install it through a FreePBX Distro ISO. But if you want more choices, you have several--FreePBX is an open-source project and works with all supported versions of Asterisk and on various flavors of Linux.
 
-My Linux of choice is Debian, and this past weekend version 11 of the OS was released. Let's try it out!
+My Linux of choice is Debian, and this past weekend version 11 of the OS was released. In addition, FreePBX version 16 is available in beta, and it uses PHP 7.4, which comes packaged with Debian 11. This seems like a good match. Let's try it out!
 
 In this blog post, we are going to simplify the installation process as much as possible through the use of Debian's "apt" package system. Some benefits of using packages are that they are maintained by the OS maintainers--there's no need to rebuild software from source when there's an update; the command lines are simple; and installations are predictable--software is installed in /usr/bin, /usr/lib, with configuration files in /etc, and so on. Moreover, the software you install from the package system tends to be well-vetted and stable. Some drawbacks to using the package system are that you are limited to the version(s) chosen by the package maintainers and customization may be more difficult. As an example, with Debian 11's apt repository, we are limited to using Asterisk version 16.
 
