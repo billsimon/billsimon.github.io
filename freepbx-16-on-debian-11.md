@@ -12,15 +12,21 @@ Start with a base Debian 11 installation (however you get it from your cloud/VPS
 
 Update to current:
 
-`apt update && apt upgrade`
+```
+apt update && apt upgrade
+```
 
 Now load the prerequisite packages including Asterisk and PHP 7.4:
 
-`apt install -y apache2 mariadb-server mariadb-client php php-curl php-cli php-pdo php-mysql php-pear php-gd php-mbstring php-intl php-bcmath curl sox mpg123 lame ffmpeg sqlite3 git unixodbc sudo dirmngr postfix asterisk odbc-mariadb php-ldap nodejs npm pkg-config libicu-dev`
+```
+apt install -y apache2 mariadb-server mariadb-client php php-curl php-cli php-pdo php-mysql php-pear php-gd php-mbstring php-intl php-bcmath curl sox mpg123 lame ffmpeg sqlite3 git unixodbc sudo dirmngr postfix asterisk odbc-mariadb php-ldap nodejs npm pkg-config libicu-dev
+```
 
 FreePBX manages Asterisk, so let's disable it in systemd:
 
-`systemctl stop asterisk && systemctl disable asterisk`
+```
+systemctl stop asterisk && systemctl disable asterisk
+```
 
 Clear out the sample Asterisk configs and leave a bare-bones config for FreePBX to build upon:
 
@@ -81,13 +87,17 @@ cd /usr/local/src/freepbx/
 
 After the FreePBX base installation is done, add the rest of the modules:
 
-`fwconsole ma installall`
+```
+fwconsole ma installall
+```
 
 Note that digiumaddoninstaller, firewall, and xmpp will not install. Firewall will not work without sysadmin (a free but commercial module); xmpp will not work without mongodb. If you want xmpp, install mongodb separately.
 
 Apply what's been done so far:
 
-`fwconsole chown && fwconsole r`
+```
+fwconsole chown && fwconsole r
+```
 
 Instead of the sound library from the Asterisk package, we're going to use what FreePBX installs:
 
@@ -99,7 +109,9 @@ ln -s /var/lib/asterisk/sounds sounds
 
 Lastly, issue a restart in order to load any Asterisk modules that weren't configured yet:
 
-`fwconsole restart`
+```
+fwconsole restart
+```
 
 To have FreePBX start on boot, add a systemd startup script:
 
