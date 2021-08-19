@@ -133,7 +133,7 @@ systemctl daemon-reload
 systemctl enable freepbx
 ```
 
-FreePBX 16 with Asterisk 16 is now installed and you are ready to move on to configuration from the web interface. Browse to http://<the IP address of the server> to continue. What's left?
+FreePBX 16 with Asterisk 16 is now installed and you are ready to move on to configuration from the web interface. Browse to http://the-IP-address-of-the-server to continue. What's left?
 
 Don't put off this task: add some network security. The Sangoma firewall module is not available on this installation, so you will probably want to manually configure iptables or ufw to control acccess, unless you have another firewall in front of your server.
 
