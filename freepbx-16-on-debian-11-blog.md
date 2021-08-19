@@ -26,4 +26,6 @@ There are still a few clean-up items remaining. Don't put off this task: add som
 
 Also, UCP's node service doesn't work with the packaged version of nodejs, but [there is a ticket open to solve this](https://issues.freepbx.org/browse/FREEPBX-22742). Keep an eye on module updates to see when this fix comes through.
 
+-----
+  
 <script src="https://gist.github.com/billsimon/f66636f83de8e1162ea318ccd7a9b576.js"></script>
