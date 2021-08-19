@@ -6,9 +6,7 @@ My Linux of choice is Debian, and this past weekend version 11 of the OS was rel
 
 In this blog post, we are going to simplify the installation process as much as possible through the use of Debian's "apt" package system. Some benefits of using packages are that they are maintained by the OS maintainers--there's no need to rebuild software from source when there's an update; the command lines are simple; and installations are predictable--software is installed in /usr/bin, /usr/lib, with configuration files in /etc, and so on. Moreover, the software you install from the package system tends to be well-vetted and stable. Some drawbacks to using the package system are that you are limited to the version(s) chosen by the package maintainers and customization may be more difficult. As an example, with Debian 11's apt repository, we are limited to using Asterisk version 16.
 
-Let's walk through the steps to install FreePBX using Debian packages. At the end, you will have a functional FreePBX 16 system with Asterisk 16 at the core. I am including a link to the Gist so that you can copy and paste, and so that any errors can be corrected after this post has been published.
-
-<script src="https://gist.github.com/billsimon/f66636f83de8e1162ea318ccd7a9b576.js"></script>
+Let's walk through the steps to install FreePBX using Debian packages. At the end, you will have a functional FreePBX 16 system with Asterisk 16 at the core. A link to the Gist is included at the bottom of the post so that you can follow along, copy and paste, and so that any errors can be corrected after this post has been published.
 
 Start with a base Debian 11 installation (however you get it from your cloud/VPS provider or Debian install disc/ISO) and log in as root or `sudo su -` to become root. Then update to current with `apt update && apt upgrade` before continuing. 
 
@@ -28,3 +26,4 @@ There are still a few clean-up items remaining. Don't put off this task: add som
 
 Also, UCP's node service doesn't work with the packaged version of nodejs, but [there is a ticket open to solve this](https://issues.freepbx.org/browse/FREEPBX-22742). Keep an eye on module updates to see when this fix comes through.
 
+<script src="https://gist.github.com/billsimon/f66636f83de8e1162ea318ccd7a9b576.js"></script>
