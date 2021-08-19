@@ -125,5 +125,5 @@ FreePBX 16 with Asterisk 16 is now installed and you are ready to move on to con
 
 Don't put off this task: add some network security. The Sangoma firewall module is not available on this installation, so you will probably want to manually configure iptables or ufw to control acccess, unless you have another firewall in front of your server.
 
-UCP's node service doesn't work with the packaged version of nodejs, but there is a ticket open to solve this. (https://issues.freepbx.org/browse/FREEPBX-22742) Keep an eye on module updates to see when this fix comes through.
+UCP's node service doesn't work with the packaged version of nodejs, but [there is a ticket open to solve this](https://issues.freepbx.org/browse/FREEPBX-22742). Keep an eye on module updates to see when this fix comes through.
 
